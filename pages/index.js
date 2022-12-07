@@ -4,17 +4,23 @@ import classnames from 'classNames'
 import styles from '../styles/Home.module.css'
 import pic from '../public/IMG_6534.JPG'
 import Image from 'next/image'
+import Link from 'next/link'
+import gmail from '../public/icons8-gmail-logo-480.png'
+import ig from '../public/icons8-instagram-480.png'
+import ld from '../public/icons8-linkedin-circled-480.png'
 
 export default function Home() {
   const [start, setStart] = React.useState(false);
   const act = ['code', 'swim', 'jump', 'draw', 'love', 'pray', 'fish', 'care'];
   const [i, seti] = React.useState(5)
+
   React.useEffect(() => {
       const timer =
         i > 0 && setInterval(() => seti(i + 1), 1000);
       return () => clearInterval(timer);
     }, [i]);
-  return (
+
+  return(
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
@@ -45,11 +51,16 @@ export default function Home() {
           <code className={styles.code}>{act[i%act.length]}</code>
         </p>
         </div>
-
-        <div>
-
+        
+        <div className={classnames(styles.left, start&&styles.leftAfter)}>
+          <p>contact me:</p>
         </div>
 
+        <div className={classnames(styles.right, start&&styles.rightAfter)}>
+          <div className={styles.icon}><Link href="https://instagram.com"><Image src={ig} width='45' height='45'/></Link></div>
+          <div className={styles.icon}><Link href="https://linkedin.com"><Image src={ld} width='45' height='45'/></Link></div>
+          <div className={styles.icon}><Link href="https://gmail.com"><Image src={gmail} width='45' height='45'/></Link></div>
+        </div>
       </main>
     </div>
   )
