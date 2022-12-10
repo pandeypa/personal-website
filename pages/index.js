@@ -49,7 +49,7 @@ export default function Home() {
 
         <button className={classnames(styles.hover, start&&styles.hoverAfter)} onClick={() => setStart(true)} start={start}>click me</button>
         
-        <Image src={pic} width='600' height='400' className={classnames(styles.imgHide, start&&styles.imgAfter)}/>
+        <Image src={pic} width='600' height='400' className={classnames(styles.imgHide, start&&styles.imgAfter)} alt="pic"/>
 
         <div className={start&&styles.downdiv}>
         <p className={styles.description}>
@@ -63,9 +63,9 @@ export default function Home() {
         </div>
 
         <div className={classnames(styles.right, start&&styles.rightAfter)}>
-          <div className={styles.icon}><Link href="https://instagram.com"><Image src={ig} width='45' height='45'/></Link></div>
-          <div className={styles.icon}><Link href="https://linkedin.com"><Image src={ld} width='45' height='45'/></Link></div>
-          <div className={styles.icon}><Link href="https://gmail.com"><Image src={gmail} width='45' height='45'/></Link></div>
+          <div className={styles.icon}><Link href="https://instagram.com"><Image src={ig} width='45' height='45' alt="pic"/></Link></div>
+          <div className={styles.icon}><Link href="https://linkedin.com"><Image src={ld} width='45' height='45' alt="pic"/></Link></div>
+          <div className={styles.icon}><Link href="https://gmail.com"><Image src={gmail} width='45' height='45' alt="pic"/></Link></div>
         </div>
 
         <div className={classnames((!start)&&styles.footer, start&&styles.footerAfter)}>

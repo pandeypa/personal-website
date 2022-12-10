@@ -183,6 +183,24 @@
   padding-right: 25px;
 }
 
+.navButton{
+  outline: none;
+  border: none;
+  display: inline;
+  float: right;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+  Bitstream Vera Sans Mono, Courier New, monospace;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 25px;
+  cursor: pointer; 
+}
+
+.navButton:hover{
+  transform: scale(1.5);
+  transition: transform .2s;
+}
+
 .home{
   display: inline;
   float: left;
@@ -222,4 +240,14 @@
   text-align: center;
   padding-left: 15px;
   padding-right: 25px;
+}
+
+.navOpen{
+  display:block;
+  opacity:1;
+}
+
+.navClose{
+  display:none;
+  opacity:0;
 }
