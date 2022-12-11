@@ -1,6 +1,11 @@
+.container{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
 .main {
   height: 100vh;
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,12 +89,17 @@
   opacity: 0;
   position:absolute;
   border-radius: 15px;
+  width:60%;
+  height:auto;
 }
 
 .imgAfter{
   animation: fadeIn 900ms;
   opacity: 1;
   border-radius: 15px;
+  width: 90%;
+  max-width: 580px;
+  height:auto;
 }
 
 .left{
@@ -250,4 +260,84 @@
 .navClose{
   display:none;
   opacity:0;
+}
+
+.headerLinks:hover{
+  transform: scale(1.20);
+  transition: transform .2s;
+}
+
+.home:hover{
+  transform: scale(1.20);
+  transition: transform .2s;
+}
+
+@media only screen and (max-width: 600px) {
+  .updiv{
+    transform:translateY(-80%);
+    transition:all 500ms ease-in-out;
+  }
+  
+  .downdiv{
+    transform: translateY(70%);
+    transition:all 500ms ease-in-out;
+  }
+
+  .left{
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+    position:absolute;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    top: 77%;
+    right: 120%;
+    opacity:0;
+    display:inline;
+    width:40%;
+  }
+
+  .leftAfter{
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+    position:absolute;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    top: 77%;
+    right: 120%;
+    opacity: 1;
+    animation: fadeIn 900ms;
+    transform:translateX(225%);
+    transition:all 500ms ease-in-out;
+    display:inline;
+    width:40%;
+  }
+
+  .right{
+    float:left;
+    position:absolute;
+    top: 84%;
+    left: 100%;
+    display:flex;
+    background: #fafafa;
+    border-radius: 5px;
+    padding: 0.45rem;
+    opacity: 0;
+  }
+  
+  .rightAfter{
+    display:flex;
+    float:left;
+    position:absolute;
+    top: 84%;
+    left: 80%;
+    background: #fafafa;
+    border-radius: 5px;
+    padding: 0.1rem;
+    opacity: 1;
+    animation: fadeIn 900ms;
+    transform:translateX(-125%);
+    transition:all 500ms ease-in-out;
+  }
+
+
 }
