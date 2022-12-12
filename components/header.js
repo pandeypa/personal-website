@@ -17,7 +17,7 @@ export default function Header() {
             <p className={styles.navButton} onClick={() => dispatch(toggle())}>=</p>
 
             <div className={classnames(tgl&&styles.navOpen, !tgl&&styles.navClose)}>
-            <Link passHref href="/exp"><p className={styles.headerLinks}>Experience</p></Link>
+            <Link passHref href="/exp"><p className={styles.headerLinks}>Work</p></Link>
             <Link passHref href="/edu"><p className={styles.headerLinks}>Education</p></Link>
             <Link passHref href="/pro"><p className={styles.headerLinks}>Projects</p></Link>
             </div>

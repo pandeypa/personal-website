@@ -16,7 +16,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: calc(3rem + .9vw);
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
   Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -28,7 +28,7 @@
 
 .description {
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: calc(1rem + .9vw);
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
   Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -37,7 +37,7 @@
   background: #fafafa;
   border-radius: 5px;
   padding: 0.75rem;
-  font-size: 1.1rem;
+  font-size: calc(0.5rem + .9vw);
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -61,12 +61,12 @@
 }
 
 .updiv{
-  transform:translateY(-158%);
+  transform:translateY(-25vh);
   transition:all 500ms ease-in-out;
 }
 
 .downdiv{
-  transform: translateY(168%);
+  transform: translateY(18vh);
   transition:all 500ms ease-in-out;
 }
 
@@ -97,7 +97,7 @@
   animation: fadeIn 900ms;
   opacity: 1;
   border-radius: 15px;
-  width: 90%;
+  width: calc(90% + .9vw);
   max-width: 580px;
   height:auto;
 }
@@ -107,10 +107,11 @@
   Bitstream Vera Sans Mono, Courier New, monospace;
   position:absolute;
   line-height: 1.5;
-  font-size: 1.5rem;
-  top: 81.6%;
-  right: 80%;
+  font-size: calc(1rem + .9vw);
+  top: 81.7vh;
+  right: 80vw;
   opacity:0;
+  white-space: nowrap;
 }
 
 .leftAfter{
@@ -118,38 +119,41 @@
   Bitstream Vera Sans Mono, Courier New, monospace;
   position:absolute;
   line-height: 1.5;
-  font-size: 1.5rem;
-  top: 81.6%;
-  right: 80%;
+  font-size: calc(1rem + .9vw);
+  top: 81.7vh;
+  right: 80vw;
   opacity: 1;
   animation: fadeIn 900ms;
-  transform:translateX(280%);
+  transform:translateX(30vw);
   transition:all 500ms ease-in-out;
+  white-space: nowrap;
 }
 
 .right{
   float:left;
   position:absolute;
-  top: 83%;
-  left: 80%;
+  top: 84vh;
+  left: 80vw;
   background: #fafafa;
   border-radius: 5px;
   padding: 0.45rem;
   opacity: 0;
+  white-space: nowrap;
 }
 
 .rightAfter{
   float:left;
   position:absolute;
-  top: 83%;
-  left: 80%;
+  top: 84vh;
+  left: 80vw;
   background: #fafafa;
   border-radius: 5px;
   padding: 0.1rem;
   opacity: 1;
   animation: fadeIn 900ms;
-  transform:translateX(-280%);
+  transform:translateX(-28vw);
   transition:all 500ms ease-in-out;
+  white-space: nowrap;
 }
 
 .icon{
@@ -189,8 +193,9 @@
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
   Bitstream Vera Sans Mono, Courier New, monospace;
   text-align: center;
-  padding-left: 15px;
-  padding-right: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: flex-end;
 }
 
 .navButton{
@@ -201,8 +206,8 @@
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
   Bitstream Vera Sans Mono, Courier New, monospace;
   text-align: center;
-  padding-left: 15px;
-  padding-right: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
   cursor: pointer; 
 }
 
@@ -272,14 +277,14 @@
   transition: transform .2s;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .updiv{
-    transform:translateY(-80%);
+    transform:translateY(-21vh);
     transition:all 500ms ease-in-out;
   }
   
   .downdiv{
-    transform: translateY(70%);
+    transform: translateY(6vh);
     transition:all 500ms ease-in-out;
   }
 
@@ -288,9 +293,9 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
     position:absolute;
     line-height: 1.5;
-    font-size: 1.5rem;
-    top: 77%;
-    right: 120%;
+    font-size: calc(1rem + .9vw);
+    top: 72vh;
+    right: 70vw;
     opacity:0;
     display:inline;
     width:40%;
@@ -301,12 +306,12 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
     position:absolute;
     line-height: 1.5;
-    font-size: 1.5rem;
-    top: 77%;
-    right: 120%;
+    font-size: calc(1rem + .9vw);
+    top: 72vh;
+    right: 70vw;
     opacity: 1;
     animation: fadeIn 900ms;
-    transform:translateX(225%);
+    transform:translateX(45vw);
     transition:all 500ms ease-in-out;
     display:inline;
     width:40%;
@@ -315,8 +320,8 @@
   .right{
     float:left;
     position:absolute;
-    top: 84%;
-    left: 100%;
+    top: 79vh;
+    left: 55vw;
     display:flex;
     background: #fafafa;
     border-radius: 5px;
@@ -328,14 +333,14 @@
     display:flex;
     float:left;
     position:absolute;
-    top: 84%;
-    left: 80%;
+    top: 79vh;
+    left: 55vw;
     background: #fafafa;
     border-radius: 5px;
     padding: 0.1rem;
     opacity: 1;
     animation: fadeIn 900ms;
-    transform:translateX(-125%);
+    transform:translateX(-25.5vw);
     transition:all 500ms ease-in-out;
   }
 
