@@ -33,7 +33,7 @@ export default function Home() {
       <br></br>
       <main className={styles.main}>
 
-        <div className={classnames(styles.header, start&&styles.headerAfter)}>
+        <div className={classnames((!start)&&styles.header, start&&styles.headerAfter)}>
         <Header></Header>
         </div>
 
@@ -47,7 +47,7 @@ export default function Home() {
         </h1>
         </div>
 
-        <button className={classnames(styles.hover, start&&styles.hoverAfter)} onClick={() => setStart(true)} start={start}>click me</button>
+        <button className={classnames((!start)&&styles.hover, start&&styles.hoverAfter)} onClick={() => setStart(true)} start={start}>click me</button>
         
         <Image src={pic} width='600' height='400' className={classnames(styles.imgHide, start&&styles.imgAfter)} alt="pic" id={styles.target}/>
 

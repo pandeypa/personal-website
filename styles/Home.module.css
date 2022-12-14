@@ -89,7 +89,7 @@
   opacity: 0;
   position:absolute;
   border-radius: 15px;
-  width:60%;
+  width: calc(90% + .9vw);
   height:auto;
 }
 
@@ -98,7 +98,7 @@
   opacity: 1;
   border-radius: 15px;
   width: calc(90% + .9vw);
-  max-width: 580px;
+  max-width: 800px;
   height:auto;
 }
 
@@ -132,7 +132,7 @@
 .right{
   float:left;
   position:absolute;
-  top: 84vh;
+  top: 84.5vh;
   left: 80vw;
   background: #fafafa;
   border-radius: 5px;
@@ -144,7 +144,7 @@
 .rightAfter{
   float:left;
   position:absolute;
-  top: 84vh;
+  top: 84.5vh;
   left: 80vw;
   background: #fafafa;
   border-radius: 5px;
